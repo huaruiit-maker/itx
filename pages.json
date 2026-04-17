@@ -1,0 +1,204 @@
+{
+	"pages": [
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "星云家电维修"
+			}
+		},
+		{
+			"path": "pages/customer/service/list",
+			"style": {
+				"navigationBarTitleText": "服务列表"
+			}
+		},
+		{
+			"path": "pages/customer/service/detail",
+			"style": {
+				"navigationBarTitleText": "服务详情"
+			}
+		},
+		{
+			"path": "pages/customer/order/booking",
+			"style": {
+				"navigationBarTitleText": "预约服务"
+			}
+		},
+		{
+			"path": "pages/customer/order/list",
+			"style": {
+				"navigationBarTitleText": "我的订单"
+			}
+		},
+		{
+			"path": "pages/customer/order/detail",
+			"style": {
+				"navigationBarTitleText": "订单详情"
+			}
+		},
+		{
+			"path": "pages/customer/order/evaluate",
+			"style": {
+				"navigationBarTitleText": "评价服务"
+			}
+		},
+		{
+			"path": "pages/customer/address/list",
+			"style": {
+				"navigationBarTitleText": "地址管理"
+			}
+		},
+		{
+			"path": "pages/customer/profile/profile",
+			"style": {
+				"navigationBarTitleText": "个人中心"
+			}
+		},
+		{
+			"path": "pages/common/search/search",
+			"style": {
+				"navigationBarTitleText": "搜索服务"
+			}
+		},
+		{
+			"path": "pages/business/auth/auth",
+			"style": {
+				"navigationBarTitleText": "商家认证"
+			}
+		},
+		{
+			"path": "pages/master/auth/auth",
+			"style": {
+				"navigationBarTitleText": "师傅认证"
+			}
+		}
+	],
+	"subPackages": [
+		{
+			"root": "pages/business",
+			"pages": [
+				{
+					"path": "workbench/workbench",
+					"style": {
+						"navigationBarTitleText": "商家工作台"
+					}
+				},
+				{
+					"path": "order/list",
+					"style": {
+						"navigationBarTitleText": "订单管理"
+					}
+				},
+				{
+					"path": "order/detail",
+					"style": {
+						"navigationBarTitleText": "订单详情"
+					}
+				},
+				{
+					"path": "service/manage",
+					"style": {
+						"navigationBarTitleText": "服务管理"
+					}
+				},
+				{
+					"path": "finance/overview",
+					"style": {
+						"navigationBarTitleText": "财务概览"
+					}
+				},
+				{
+					"path": "finance/transactions",
+					"style": {
+						"navigationBarTitleText": "交易记录"
+					}
+				},
+				{
+					"path": "profile/profile",
+					"style": {
+						"navigationBarTitleText": "商家中心"
+					}
+				}
+			]
+		},
+		{
+			"root": "pages/master",
+			"pages": [
+				{
+					"path": "workbench/workbench",
+					"style": {
+						"navigationBarTitleText": "师傅工作台"
+					}
+				},
+				{
+					"path": "order/list",
+					"style": {
+						"navigationBarTitleText": "订单列表"
+					}
+				},
+				{
+					"path": "order/detail",
+					"style": {
+						"navigationBarTitleText": "订单详情"
+					}
+				},
+				{
+					"path": "schedule/schedule",
+					"style": {
+						"navigationBarTitleText": "日程管理"
+					}
+				},
+				{
+					"path": "profile/profile",
+					"style": {
+						"navigationBarTitleText": "个人中心"
+					}
+				}
+			]
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "星云家电维修",
+		"navigationBarBackgroundColor": "#007AFF",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#007AFF",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tabbar/home.svg",
+				"selectedIconPath": "static/tabbar/home-active.svg",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/customer/service/list",
+				"iconPath": "static/tabbar/service.svg",
+				"selectedIconPath": "static/tabbar/service-active.svg",
+				"text": "服务"
+			},
+			{
+				"pagePath": "pages/customer/order/list",
+				"iconPath": "static/tabbar/order.svg",
+				"selectedIconPath": "static/tabbar/order-active.svg",
+				"text": "订单"
+			},
+			{
+				"pagePath": "pages/customer/profile/profile",
+				"iconPath": "static/tabbar/user.svg",
+				"selectedIconPath": "static/tabbar/user-active.svg",
+				"text": "我的"
+			}
+		]
+	},
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"^u-(.*)": "vk-uview-ui/components/u-$1/u-$1.vue"
+		}
+	}
+}
